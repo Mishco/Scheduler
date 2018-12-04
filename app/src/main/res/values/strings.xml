@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BibleSchedule</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro_message">Hello in Bible Schedule</string>
+</resources>
