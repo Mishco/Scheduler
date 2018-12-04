@@ -16,7 +16,7 @@ public class EditAnimal extends Activity {
     EditText scheduleWasRead;
 
 
-    DBController controller = new DBController(this);
+    DBController controller = new DBController(this,1);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

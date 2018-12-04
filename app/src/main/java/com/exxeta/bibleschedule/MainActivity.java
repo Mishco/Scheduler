@@ -15,8 +15,11 @@ import android.widget.Filterable;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.exxeta.bibleschedule.Model.Schedule;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,9 +27,10 @@ import java.util.Collections;
 public class MainActivity extends ListActivity implements SearchView.OnQueryTextListener {
 
     private final int ITEMS_COUNT = 7;
+    private final int VERSION = 1;
 
     TextView scheduleId;
-    DBController controller = new DBController(this);
+    DBController controller = new DBController(this, VERSION);
 
     private SearchView mSearchView;
     private ListView mListView;
@@ -57,7 +61,7 @@ public class MainActivity extends ListActivity implements SearchView.OnQueryText
      */
     private void initDb() {
 
-        // FIXME ONLY AFTER INSTALLATION
+        // FIXME ONLY AFTER INSTALLATION if change version
 //        controller.readDataFromCsv(getResources().openRawResource(
 //                getResources().getIdentifier("coordinate_2019",
 //                        "raw", getPackageName())));
@@ -102,7 +106,7 @@ public class MainActivity extends ListActivity implements SearchView.OnQueryText
         }
 
         private void sortSchedule() {
-            Collections.sort(scheduleArrayList, (Schedule c1, Schedule c2);
+            Collections.sort(scheduleArrayList, ((Schedule o1, Schedule o2) -> o1.getDate().compareTo(o2.getDate())));
         }
 
 
@@ -140,6 +144,17 @@ public class MainActivity extends ListActivity implements SearchView.OnQueryText
                     .setText(getItem(position).getDate().toString());
             ((TextView) convertView.findViewById(android.R.id.text2))
                     .setText(getItem(position).getCoordinate());
+
+            TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
+            textView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this,
+                            getItem(position).getCoordinate().toString(),
+                            Toast.LENGTH_LONG).show();
+                }
+            });
+
             return convertView;
         }
 

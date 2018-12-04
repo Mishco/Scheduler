@@ -25,8 +25,8 @@ import java.util.HashMap;
 public class DBController extends SQLiteOpenHelper {
     private static final String LOGCAT = null;
 
-    public DBController(Context applicationcontext) {
-        super(applicationcontext, "androidsqlite.db", null, 1);
+    public DBController(Context applicationcontext, int version) {
+        super(applicationcontext, "androidsqlite.db", null, version);
         Log.d(LOGCAT, "Created");
     }
 
@@ -79,6 +79,7 @@ public class DBController extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase database) {
         String query;
+        // TODO createTAble if not exists
         query = "CREATE TABLE schedule ( scheduleId INTEGER PRIMARY KEY, date TEXT, coordinates TEXT, wasRead TEXT)";
         database.execSQL(query);
         Log.d(LOGCAT, "schedule Created");

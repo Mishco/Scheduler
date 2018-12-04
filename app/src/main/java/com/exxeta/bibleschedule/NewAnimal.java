@@ -12,7 +12,7 @@ public class NewAnimal extends Activity {
     EditText scheduleDate;
     EditText scheduleCoordinates;
     EditText scheduleWasRead;
-    DBController controller = new DBController(this);
+    DBController controller = new DBController(this,1);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
