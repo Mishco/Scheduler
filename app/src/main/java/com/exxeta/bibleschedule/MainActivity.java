@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.exxeta.bibleschedule.Model.Schedule;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends ListActivity implements SearchView.OnQueryTextListener {
 
@@ -96,6 +97,12 @@ public class MainActivity extends ListActivity implements SearchView.OnQueryText
             super();
             this.context = context;
             this.scheduleArrayList = controller.getAllCoordinates(); // from db
+
+            sortSchedule();
+        }
+
+        private void sortSchedule() {
+            Collections.sort(scheduleArrayList, (Schedule c1, Schedule c2);
         }
 
 

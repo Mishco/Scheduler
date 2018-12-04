@@ -11,6 +11,8 @@ import com.exxeta.bibleschedule.Model.Schedule;
 import com.opencsv.CSVReader;
 
 import org.joda.time.LocalDate;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -145,7 +147,15 @@ public class DBController extends SQLiteOpenHelper {
                 map.put("wasRead", wasRead);
                 wordList.add(map);
 
-                resultList.add(new Schedule(id, LocalDate.parse(date), coordinates, wasRead));
+                DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
+                LocalDate localDate = LocalDate.now();
+                try {
+                    localDate = LocalDate.parse(date, dateFormatter);
+                } catch (Exception ex) {
+                    // FIXME ingnored
+                }
+
+                resultList.add(new Schedule(id, localDate, coordinates, wasRead));
             } while (cursor.moveToNext());
         }
         return resultList;
