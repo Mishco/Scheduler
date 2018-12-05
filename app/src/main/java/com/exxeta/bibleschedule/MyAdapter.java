@@ -19,20 +19,24 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 /**
  * Adapter for manage Item in list
  */
 public class MyAdapter extends BaseAdapter implements Filterable {
+    private final String WAS_READ = "TRUE";
     public Context context;
     public static ArrayList<Schedule> scheduleArrayList;
     public ArrayList<Schedule> orig;
+
+    private DBController controller;
 
     public MyAdapter(Context context, DBController controller) {
         super();
         this.context = context;
         DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
-
+        this.controller = controller;
         this.scheduleArrayList = controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
 
         sortSchedule();
@@ -85,12 +89,23 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         ((TextView) convertView.findViewById(android.R.id.text2))
                 .setText(getItem(position).getCoordinate());
 
+
+
         TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
         final int[] CHECKED_STATE_SET = {android.R.attr.state_checked};
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                // Update info in db
+                HashMap<String, String> queryValues = new HashMap<>();
+                queryValues.put("date", getItem(position).getDate().toString());
+                queryValues.put("coordinates", getItem(position).getCoordinate());
+                queryValues.put("wasRead", WAS_READ);
+
+                controller.updateSchedule(queryValues);
+
                 // TODO check this textviews and checkbox after click na read the text
                 // LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 // inflater.inflate(R.layout.list_item, container, false);

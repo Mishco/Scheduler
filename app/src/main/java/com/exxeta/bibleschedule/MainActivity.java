@@ -108,9 +108,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         }
 
 
-//        controller.readDataFromCsv(getResources().openRawResource(
-//                getResources().getIdentifier("coordinate_2019",
-//                        "raw", getPackageName())));
+        controller.readDataFromCsv(getResources().openRawResource(
+                getResources().getIdentifier("coordinate_2019",
+                        "raw", getPackageName())));
     }
 
     @Override
