@@ -19,12 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.exxeta.bibleschedule.NewAnimal"
-            android:label=""></activity>
-        <activity
-            android:name="com.exxeta.bibleschedule.EditAnimal"
-            android:label=""></activity>
+        <activity android:name=".NextActivity"></activity>
+
     </application>
 
 </manifest>

@@ -41,7 +41,8 @@
         are system theme attributes that reference a state list drawable.
     -->
     <ImageView
-        android:src="@drawable/ic_hide_item"
+        android:id="@android:id/checkbox"
+        android:src="?android:listChoiceIndicatorMultiple"
         android:duplicateParentState="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

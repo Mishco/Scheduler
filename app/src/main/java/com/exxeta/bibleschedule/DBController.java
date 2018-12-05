@@ -60,22 +60,6 @@ public class DBController extends SQLiteOpenHelper {
         }
     }
 
-    public void initDummyCoordinates() {
-        HashMap<String, String> query = new HashMap<>();
-        query.put("date", "1/1/2019");
-        query.put("coordinates", "Mt 1,1-17");
-        query.put("wasRead", "false");
-
-        insertCoordinates(query);
-        query.clear();
-
-        query.put("date", "1/2/2019");
-        query.put("coordinates", "Mt 1,18-25");
-        query.put("wasRead", "false");
-        insertCoordinates(query);
-    }
-
-
     @Override
     public void onCreate(SQLiteDatabase database) {
         String query;

@@ -13,6 +13,7 @@ public class Schedule {
     private String coordinate;
     private String wasRead;
 
+    private boolean isSelected;
 
     public Schedule(String id, LocalDate date, String coordinate, String wasRead) {
         this.id = id;
@@ -52,4 +53,13 @@ public class Schedule {
     public void setWasRead(String wasRead) {
         this.wasRead = wasRead;
     }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
+    }
+
 }
