@@ -4,6 +4,7 @@ package com.exxeta.bibleschedule;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -47,7 +48,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 //        setupSearchView();
         mListView.setAdapter(new MyAdapter(MainActivity.this, controller));
 
-
+        if (savedInstanceState == null) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            SlidingTabsBasicFragment fragment = new SlidingTabsBasicFragment();
+            transaction.replace(R.id.sample_content_fragment, fragment);
+            transaction.commit();
+        }
     }
 
 
@@ -71,15 +77,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         return super.onOptionsItemSelected(item);
     }
-
-
-//    private void setupSearchView() {
-    //https://stackoverflow.com/questions/23857313/filter-text-display-in-searchview-not-removing
-//        mSearchView.setIconifiedByDefault(false);
-//        mSearchView.setOnQueryTextListener(this);
-//        mSearchView.setSubmitButtonEnabled(true);
-//        mSearchView.setQueryHint("Search Here");
-//    }
 
     /**
      * Initialization sqlite database
@@ -109,6 +106,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         } else {
             Log.e(MAIN, "Bundle extras is null");
         }
+
+
 //        controller.readDataFromCsv(getResources().openRawResource(
 //                getResources().getIdentifier("coordinate_2019",
 //                        "raw", getPackageName())));
@@ -129,6 +128,4 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public boolean onQueryTextChange(String newText) {
         return false;
     }
-
-
 }

@@ -25,6 +25,16 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0px" />
 
     <!--<SearchView-->
     <!--android:id="@+id/searchView1"-->

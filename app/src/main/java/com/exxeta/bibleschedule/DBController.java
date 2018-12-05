@@ -163,4 +163,24 @@ public class DBController extends SQLiteOpenHelper {
         return wordList;
     }
 
+
+    /**
+     * @param startOfWeek monday in usually
+     * @return
+     */
+    public ArrayList<Schedule> getWeekRecordsFromAllCoordinates(LocalDate startOfWeek) {
+        int oneDay = 1;
+        int oneWeek = 8; // last day included
+        // Because database does not have implemented localdate data type
+
+        ArrayList<Schedule> scheduleArrayList = this.getAllCoordinates();
+        ArrayList<Schedule> resultArray = new ArrayList<>();
+        for (Schedule item : scheduleArrayList) {
+            if (item.getDate().isAfter(startOfWeek.minusDays(oneDay)) && item.getDate().isBefore(startOfWeek.plusDays(oneWeek))) {
+                resultArray.add(item);
+            }
+        }
+        return resultArray;
+    }
+
 }

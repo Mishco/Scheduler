@@ -2,7 +2,6 @@ package com.exxeta.bibleschedule;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,10 +9,13 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.Filter;
 import android.widget.Filterable;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.exxeta.bibleschedule.Model.Schedule;
+
+import org.joda.time.LocalDate;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +31,9 @@ public class MyAdapter extends BaseAdapter implements Filterable {
     public MyAdapter(Context context, DBController controller) {
         super();
         this.context = context;
-        this.scheduleArrayList = controller.getAllCoordinates(); // from db
+        DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
+
+        this.scheduleArrayList = controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
 
         sortSchedule();
     }
@@ -60,6 +64,7 @@ public class MyAdapter extends BaseAdapter implements Filterable {
 
     /**
      * SOURCE https://demonuts.com/listview-checkbox/
+     *
      * @param position
      * @param convertView
      * @param container
@@ -89,7 +94,7 @@ public class MyAdapter extends BaseAdapter implements Filterable {
                 // TODO check this textviews and checkbox after click na read the text
                 // LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 // inflater.inflate(R.layout.list_item, container, false);
-                Intent intent = new Intent(context.getApplicationContext(),NextActivity.class);
+                Intent intent = new Intent(context.getApplicationContext(), NextActivity.class);
                 context.getApplicationContext().startActivity(intent);
             }
         });
