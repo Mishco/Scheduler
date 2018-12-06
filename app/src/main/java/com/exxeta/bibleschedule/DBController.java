@@ -24,10 +24,22 @@ import java.util.HashMap;
 
 public class DBController extends SQLiteOpenHelper {
     private static final String LOGCAT = null;
+    private static DBController sInstance;
 
-    public DBController(Context applicationcontext, int version) {
-        super(applicationcontext, "androidsqlite.db", null, version);
-        Log.d(LOGCAT, "Created");
+    private static final String DATABASE_NAME = "androidsqlite.db";
+    private static final String DATABASE_TABLE = "schedule";
+    private static final int DATABASE_VERSION = 1;
+
+    public static synchronized DBController getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new DBController(context);
+        }
+        return sInstance;
+    }
+
+    private DBController(Context applicationContext) {
+        super(applicationContext, DATABASE_NAME, null, DATABASE_VERSION);
+        Log.d(LOGCAT, "Created database");
     }
 
 
@@ -62,9 +74,7 @@ public class DBController extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-        String query;
-        // TODO createTAble if not exists
-        query = "CREATE TABLE schedule ( scheduleId INTEGER PRIMARY KEY, date TEXT, coordinates TEXT, wasRead TEXT)";
+        String query = "CREATE TABLE " + DATABASE_TABLE + " ( scheduleId INTEGER PRIMARY KEY, date TEXT, coordinates TEXT, wasRead TEXT)";
         database.execSQL(query);
         Log.d(LOGCAT, "schedule Created");
     }
@@ -72,7 +82,7 @@ public class DBController extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase database, int version_old, int current_version) {
         String query;
-        query = "DROP TABLE IF EXISTS schedule";
+        query = "DROP TABLE IF EXISTS " + DATABASE_TABLE;
         database.execSQL(query);
         onCreate(database);
     }
@@ -85,7 +95,7 @@ public class DBController extends SQLiteOpenHelper {
         values.put("coordinates", queryValues.get("coordinates"));
         values.put("wasRead", queryValues.get("wasRead"));
 
-        database.insert("schedule", null, values);
+        database.insert(DATABASE_TABLE, null, values);
         database.close();
     }
 
@@ -98,15 +108,24 @@ public class DBController extends SQLiteOpenHelper {
         values.put("coordinates", queryValues.get("coordinates"));
         values.put("wasRead", queryValues.get("wasRead"));
 
-        return db.update("schedule", values, "scheduleId" + " = ?", new String[]{queryValues.get("scheduleId")});
+        return db.update(DATABASE_TABLE, values, "scheduleId" + " = ?", new String[]{queryValues.get("scheduleId")});
     }
 
     public void deleteSchedule(String id) {
         Log.d(LOGCAT, "delete");
         SQLiteDatabase db = this.getWritableDatabase();
-        String deleteQuery = "DELETE FROM schedule WHERE scheduleId='" + id + "'";
+        String deleteQuery = "DELETE FROM " + DATABASE_TABLE + " WHERE scheduleId='" + id + "'";
         Log.d("query", deleteQuery);
         db.execSQL(deleteQuery);
+    }
+
+    public int updateScheduleOnCoordinate(String coordinate) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put("wasRead", Util.WAS_READ);
+
+        return db.update(DATABASE_TABLE, values, "coordinates" + " = ?", new String[]{coordinate});
     }
 
 
@@ -115,7 +134,7 @@ public class DBController extends SQLiteOpenHelper {
         ArrayList<HashMap<String, String>> wordList = new ArrayList<>();
         ArrayList<Schedule> resultList = new ArrayList<>();
 
-        String selectedQuery = "SELECT * FROM schedule";
+        String selectedQuery = "SELECT * FROM " + DATABASE_TABLE;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectedQuery, null);
         if (cursor.moveToFirst()) {
@@ -149,7 +168,7 @@ public class DBController extends SQLiteOpenHelper {
     public HashMap<String, String> getCoordinatesInfo(String id) {
         HashMap<String, String> wordList = new HashMap<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        String selectQuery = "SELECT * FROM schedule WHERE scheduleId='" + id + "'";
+        String selectQuery = "SELECT * FROM " + DATABASE_TABLE + " WHERE scheduleId='" + id + "'";
         Cursor cursor = db.rawQuery(selectQuery, null);
         if (cursor.moveToFirst()) {
             do {

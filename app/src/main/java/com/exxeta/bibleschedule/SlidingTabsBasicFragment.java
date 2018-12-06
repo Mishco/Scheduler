@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.exxeta.bibleschedule.View.SlidingTabLayout;
 
@@ -30,10 +29,10 @@ class SlidingTabsBasicFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
-        mViewPager.setAdapter(new SamplePagerAdapter());
-        mSlidingTabLayout = (SlidingTabLayout) view.findViewById(R.id.sliding_tabs);
-        mSlidingTabLayout.setViewPager(mViewPager);
+//        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
+//        mViewPager.setAdapter(new SamplePagerAdapter());
+//        mSlidingTabLayout = (SlidingTabLayout) view.findViewById(R.id.sliding_tabs);
+//        mSlidingTabLayout.setViewPager(mViewPager);
     }
 
     class SamplePagerAdapter extends PagerAdapter {
@@ -61,8 +60,8 @@ class SlidingTabsBasicFragment extends Fragment {
 
             container.addView(view);
 
-            TextView title = (TextView) view.findViewById(R.id.item_title);
-            title.setText(String.valueOf(position + 1));
+            //TextView title = (TextView) view.findViewById(R.id.item_title);
+            //title.setText(String.valueOf(position + 1));
 
             Log.i(LOG_TAG, "instantiateItem() [position: " + position + "]");
             return view;
