@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: "org.sonarqube"
 
 android {
     compileSdkVersion 28
@@ -37,4 +38,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'BibleSchedule2'
+        property 'sonar.working.directory', '$project.buildDir/sonar'
+        property 'sonar.projectVersion', '1'
+        property 'sonar.sources', 'src/main/java'
+        property 'sonar.language', 'java'
+    }
 }
