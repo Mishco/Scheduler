@@ -1,7 +1,6 @@
 package com.exxeta.bibleschedule;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,6 @@ import android.widget.TextView;
 
 import com.exxeta.bibleschedule.Model.Schedule;
 
-import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -24,7 +22,7 @@ import java.util.Collections;
  * Adapter for manage Item in list
  */
 public class MyAdapter extends BaseAdapter implements Filterable {
-    public Context context;
+    private Context context;
     public static ArrayList<Schedule> scheduleArrayList;
     public ArrayList<Schedule> orig;
 
@@ -33,35 +31,36 @@ public class MyAdapter extends BaseAdapter implements Filterable {
     public MyAdapter(Context context, DBController controller) {
         super();
         this.context = context;
-        DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
         this.controller = controller;
-        this.scheduleArrayList = controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
 
+        loadSchedule();
         sortSchedule();
+    }
+
+
+    private void loadSchedule() {
+        DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
+        scheduleArrayList = controller.getAllCoordinates();
+        //controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
     }
 
     private void sortSchedule() {
         Collections.sort(scheduleArrayList, ((Schedule o1, Schedule o2) -> o1.getDate().compareTo(o2.getDate())));
     }
 
-
     @Override
     public int getCount() {
         return scheduleArrayList.size();
-        //return controller.getAllCoordinates().size();
     }
 
     @Override
     public Schedule getItem(int position) {
         return scheduleArrayList.get(position);
-
-        //return controller.getAllCoordinates().get(position);
     }
 
     @Override
     public long getItemId(int position) {
         return position;
-        //return controller.getAllCoordinates().get(position).hashCode();
     }
 
     /**
@@ -74,31 +73,36 @@ public class MyAdapter extends BaseAdapter implements Filterable {
      */
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
-        final ViewHolder holder;
-        if (convertView == null) {
-            holder = new ViewHolder();
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        final ViewHolder viewHolder;
+        final Schedule current = scheduleArrayList.get(position);
 
+        if (convertView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.list_item, container, false);
+
+            viewHolder = new ViewHolder();
+            viewHolder.tvDate = convertView.findViewById(R.id.text1);
+            viewHolder.tvCoordinate = convertView.findViewById(R.id.text2);
+
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
         }
         DateTimeFormatter dtfOut = DateTimeFormat.forPattern("MMM/dd");
 
-        ((TextView) convertView.findViewById(android.R.id.text1))
-                .setText(dtfOut.print(getItem(position).getDate()));
-        ((TextView) convertView.findViewById(android.R.id.text2))
-                .setText(getItem(position).getCoordinate());
+        viewHolder.tvDate.setText(dtfOut.print(current.getDate()));
+        viewHolder.tvCoordinate.setText(current.getCoordinate());
 
-        TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO check this textviews and checkbox after click na read the text
-                // LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                // inflater.inflate(R.layout.list_item, container, false);
-                Intent intent = new Intent(context.getApplicationContext(), NextActivity.class);
-                context.getApplicationContext().startActivity(intent);
-            }
-        });
+
+//        TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // TODO check this textviews and checkbox after click na read the text
+//                Intent intent = new Intent(context.getApplicationContext(), NextActivity.class);
+//                context.getApplicationContext().startActivity(intent);
+//            }
+//        });
 
         return convertView;
     }

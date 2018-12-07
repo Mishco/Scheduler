@@ -1,56 +1,67 @@
 package com.exxeta.bibleschedule;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.exxeta.bibleschedule.Model.Schedule;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
     private static final String MAIN = "MAIN";
-    private final int VERSION = 1; // default value
-
-    DBController controller = DBController.getInstance(this);
+    private DBController controller = DBController.getInstance(this);
     private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Recovering the instance state
-        Intent intent = getIntent();
-        long projectId = intent.getLongExtra("project_id", VERSION);
-
-
         setContentView(R.layout.activity_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(myToolbar);
-
-        mListView = (ListView) findViewById(android.R.id.list);
-        mListView.setTextFilterEnabled(true);
-
         initDb();
+        findViewsById();
 
-        mListView.setAdapter(new MyAdapter(MainActivity.this, controller));
-
-        if (savedInstanceState == null) {
-//            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//            SlidingTabsBasicFragment fragment = new SlidingTabsBasicFragment();
-//            transaction.replace(R.id.sample_content_fragment, fragment);
-//            transaction.commit();
+        //mListView.setItemChecked(2, true);
+        List<Schedule> list = controller.getAllCoordinates();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getWasRead().equals(Util.WAS_READ)) {
+                mListView.setItemChecked(i, true);
+            }
         }
+
     }
 
+    private void findViewsById() {
+        mListView = findViewById(R.id.MainListView);
+        mListView.setTextFilterEnabled(true);
+        mListView.setAdapter(new MyAdapter(MainActivity.this, controller));
+
+        Toolbar myToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
+    }
+
+    private List<Schedule> getSelectedItems() {
+        List<Schedule> result = new ArrayList<>();
+        SparseBooleanArray checkedItems = mListView.getCheckedItemPositions();
+
+        for (int i = 0; i < mListView.getCount(); i++) {
+            if (checkedItems.size() > i && checkedItems.valueAt(i)) {
+                result.add((Schedule) mListView.getItemAtPosition(checkedItems.keyAt(i)));
+            }
+        }
+
+
+        return result;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -69,7 +80,14 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         if (id == R.id.action_settings) {
             return true;
         }
-
+        if (id == R.id.action_show_number_of_checked) {
+            List<Schedule> selected = getSelectedItems();
+            if (selected != null) {
+                String logString = "Count items: " + selected.size();
+                Toast.makeText(this, logString, Toast.LENGTH_SHORT).show();
+            }
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -77,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
      * Initialization sqlite database
      */
     private void initDb() {
+        //.controller.dropDatabase();
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
 
@@ -85,7 +105,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 // Update the db
                 Log.d(MAIN, "Database was updated");
             } else {
-                // insert
                 // FIXME ONLY AFTER INSTALLATION if change version
 //                controller.readDataFromCsv(getResources().openRawResource(
 //                        getResources().getIdentifier("coordinate_2019",
@@ -101,6 +120,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         } else {
             Log.e(MAIN, "Bundle extras is null");
         }
+
         // TODO !!!
 //        controller.readDataFromCsv(getResources().openRawResource(
 //                getResources().getIdentifier("coordinate_2019",
@@ -132,7 +152,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-
+        Log.i(MAIN, "save instance state");
+        List<Schedule> list = getSelectedItems();
+        for (int i = 0; i < list.size(); i++) {
+            controller.updateScheduleOnCoordinate(list.get(i).getCoordinate());
+        }
     }
 
     /**
@@ -142,7 +166,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
      */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
-
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(MAIN, "restore instance state");
     }
 
     // Update database information
@@ -150,15 +175,21 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public void onPause() {
         super.onPause();
 
-        System.err.println("Size of scheduleArrayList: " + MyAdapter.scheduleArrayList.size());
-        ArrayList<Schedule> scheduleList = MyAdapter.scheduleArrayList;
-        ArrayList<Schedule> resultList = new ArrayList<>();
-        for (Schedule sc : scheduleList) {
-            if (sc.getWasRead().contains("TRUE")) {
-                resultList.add(sc);
-            }
+        List<Schedule> list = getSelectedItems();
+        for (int i = 0; i < list.size(); i++) {
+            controller.updateScheduleOnCoordinate(list.get(i).getCoordinate());
         }
-        System.err.println("Size of clicked item: " + resultList.size());
+
+
+//        System.err.println("Size of scheduleArrayList: " + MyAdapter.scheduleArrayList.size());
+//        ArrayList<Schedule> scheduleList = MyAdapter.scheduleArrayList;
+//        ArrayList<Schedule> resultList = new ArrayList<>();
+//        for (Schedule sc : scheduleList) {
+//            if (sc.getWasRead().contains("TRUE")) {
+//                resultList.add(sc);
+//            }
+//        }
+        // System.err.println("Size of clicked item: " + resultList.size());
 
         // TODO update database information
         //DBController database = new DBController(this);
