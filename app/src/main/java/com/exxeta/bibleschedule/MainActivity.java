@@ -14,9 +14,13 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.exxeta.bibleschedule.Model.Schedule;
+import com.exxeta.bibleschedule.Model.User;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
     private static final String MAIN = "MAIN";
@@ -27,16 +31,40 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initDb();
-        findViewsById();
+        Realm.init(this);
+
+        Realm realm = Realm.getDefaultInstance();
+
+//        realm.beginTransaction();
+//        User user = realm.createObject(User.class);
+//        user.setAge(10);
+//        user.setDateOfBirth(LocalDate.now().toDate());
+//        user.setName("Miso");
+//        realm.commitTransaction();
+
+        RealmResults<User> result = realm.where(User.class)
+                .lessThan("age", 45)//find all users with age less than 45
+                .findAll();//return all result that reach criteria
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < result.size(); i++) {
+            stringBuilder.append(result.get(i).getName() + "  " + result.get(i).getDateOfBirth().toString());
+        }
+        System.out.println(stringBuilder);
+
+
+        realm.close();
+
+        //initDb();
+        //findViewsById();
 
         //mListView.setItemChecked(2, true);
-        List<Schedule> list = controller.getAllCoordinates();
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getWasRead().equals(Util.WAS_READ)) {
-                mListView.setItemChecked(i, true);
-            }
-        }
+//        List<Schedule> list = controller.getAllCoordinates();
+//        for (int i = 0; i < list.size(); i++) {
+//            if (list.get(i).getWasRead().equals(Util.WAS_READ)) {
+//                mListView.setItemChecked(i, true);
+//            }
+//        }
 
     }
 
@@ -58,8 +86,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 result.add((Schedule) mListView.getItemAtPosition(checkedItems.keyAt(i)));
             }
         }
-
-
         return result;
     }
 
