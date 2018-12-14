@@ -16,8 +16,8 @@ public class NextActivity extends AppCompatActivity {
         textCoordinates = (TextView) findViewById(R.id.tv);
 
         for (int i = 0; i <  MyAdapter.scheduleArrayList.size(); i++){
-            if(MyAdapter.scheduleArrayList.get(i).isSelected()) {
-                textCoordinates.setText(textCoordinates.getText() + " " + MyAdapter.scheduleArrayList.get(i).getCoordinate());
+            if(MyAdapter.scheduleArrayList.get(i).getWasRead()) {
+                textCoordinates.setText(textCoordinates.getText() + " " + MyAdapter.scheduleArrayList.get(i).getCoordinates());
             }
         }
 

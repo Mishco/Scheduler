@@ -1,0 +1,2192 @@
+[
+  {
+    "date": "2019-01-01T00:00:00.00Z",
+    "coordinates": "Gen 1; ® 1; Mt 1,1-17",
+    "wasRead": false,
+    "whenWasRead": "2019-01-01T00:00:00.00Z"
+  },
+  {
+    "date": "2019-01-02T00:00:00.00Z",
+    "coordinates": "Malachiá¹; Sir 51,13-30; Jn 3,16-2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-03T00:00:00.00Z",
+    "coordinates": "Psalm 1",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-04T00:00:00.00Z",
+    "coordinates": "Genesis 2:18-4:16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-05T00:00:00.00Z",
+    "coordinates": "Matthew 1:18-2:18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-06T00:00:00.00Z",
+    "coordinates": "Psalm 2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-07T00:00:00.00Z",
+    "coordinates": "Genesis 4:17-6:22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-08T00:00:00.00Z",
+    "coordinates": "Matthew 2:19-3:17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-09T00:00:00.00Z",
+    "coordinates": "Psalm 3",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-10T00:00:00.00Z",
+    "coordinates": "Genesis 7:1-9:17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-11T00:00:00.00Z",
+    "coordinates": "Matthew 4:1-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-12T00:00:00.00Z",
+    "coordinates": "Proverbs 1:1-7",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-13T00:00:00.00Z",
+    "coordinates": "Genesis 9:18-11:9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-14T00:00:00.00Z",
+    "coordinates": "Matthew 4:23-5:20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-15T00:00:00.00Z",
+    "coordinates": "Psalm 4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-16T00:00:00.00Z",
+    "coordinates": "Genesis 11:10-13:18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-17T00:00:00.00Z",
+    "coordinates": "Matthew 5:21-42",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-18T00:00:00.00Z",
+    "coordinates": "Psalm 5",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-19T00:00:00.00Z",
+    "coordinates": "Genesis 14-16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-20T00:00:00.00Z",
+    "coordinates": "Matthew 5:43-6:24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-21T00:00:00.00Z",
+    "coordinates": "Psalm 6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-22T00:00:00.00Z",
+    "coordinates": "Genesis 17-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-23T00:00:00.00Z",
+    "coordinates": "Matthew 6:25-7:23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-24T00:00:00.00Z",
+    "coordinates": "Proverbs 1:8-19",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-25T00:00:00.00Z",
+    "coordinates": "Genesis 19-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-26T00:00:00.00Z",
+    "coordinates": "Matthew 7:24-8:22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-27T00:00:00.00Z",
+    "coordinates": "Psalm 7:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-28T00:00:00.00Z",
+    "coordinates": "Genesis 21-23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-29T00:00:00.00Z",
+    "coordinates": "Matthew 8:23-9:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-30T00:00:00.00Z",
+    "coordinates": "Psalm 7:10-17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-01-31T00:00:00.00Z",
+    "coordinates": "Genesis 24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-01T00:00:00.00Z",
+    "coordinates": "Matthew 9:14-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-02T00:00:00.00Z",
+    "coordinates": "Psalm 8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-03T00:00:00.00Z",
+    "coordinates": "Genesis 25-26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-04T00:00:00.00Z",
+    "coordinates": "Matthew 10:1-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-05T00:00:00.00Z",
+    "coordinates": "Proverbs 1:20-33",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-06T00:00:00.00Z",
+    "coordinates": "Genesis 27-28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-07T00:00:00.00Z",
+    "coordinates": "Matthew 10:32-11:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-08T00:00:00.00Z",
+    "coordinates": "Psalm 9:1-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-09T00:00:00.00Z",
+    "coordinates": "Genesis 29-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-10T00:00:00.00Z",
+    "coordinates": "Matthew 11:11-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-11T00:00:00.00Z",
+    "coordinates": "Psalm 9:7-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-12T00:00:00.00Z",
+    "coordinates": "Genesis 31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-13T00:00:00.00Z",
+    "coordinates": "Matthew 12:1-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-14T00:00:00.00Z",
+    "coordinates": "Psalm 9:13-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-15T00:00:00.00Z",
+    "coordinates": "Genesis 32-33",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-16T00:00:00.00Z",
+    "coordinates": "Matthew 12:22-45",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-17T00:00:00.00Z",
+    "coordinates": "Proverbs 2:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-18T00:00:00.00Z",
+    "coordinates": "Genesis 34-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-19T00:00:00.00Z",
+    "coordinates": "Matthew 12:46-13:17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-20T00:00:00.00Z",
+    "coordinates": "Psalm 10:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-21T00:00:00.00Z",
+    "coordinates": "Genesis 36-37",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-22T00:00:00.00Z",
+    "coordinates": "Matthew 13:18-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-23T00:00:00.00Z",
+    "coordinates": "Psalm 10:12-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-24T00:00:00.00Z",
+    "coordinates": "Genesis 38-39",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-25T00:00:00.00Z",
+    "coordinates": "Matthew 13:36-58",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-26T00:00:00.00Z",
+    "coordinates": "Psalm 11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-27T00:00:00.00Z",
+    "coordinates": "Genesis 40:1-41:40",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-02-28T00:00:00.00Z",
+    "coordinates": "Matthew 14:1-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-01T00:00:00.00Z",
+    "coordinates": "Proverbs 2:12-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-02T00:00:00.00Z",
+    "coordinates": "Genesis 41:41-42:38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-03T00:00:00.00Z",
+    "coordinates": "Matthew 14:22-15:9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-04T00:00:00.00Z",
+    "coordinates": "Psalm 12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-05T00:00:00.00Z",
+    "coordinates": "Genesis 43-44",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-06T00:00:00.00Z",
+    "coordinates": "Matthew 15:10-39",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-07T00:00:00.00Z",
+    "coordinates": "Psalm 13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-08T00:00:00.00Z",
+    "coordinates": "Genesis 45-46",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-09T00:00:00.00Z",
+    "coordinates": "Matthew 16:1-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-10T00:00:00.00Z",
+    "coordinates": "Psalm 14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-11T00:00:00.00Z",
+    "coordinates": "Genesis 47-48",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-12T00:00:00.00Z",
+    "coordinates": "Matthew 16:21-17:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-13T00:00:00.00Z",
+    "coordinates": "Proverbs 3:1-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-14T00:00:00.00Z",
+    "coordinates": "Genesis 49-50",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-15T00:00:00.00Z",
+    "coordinates": "Matthew 17:14-18:9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-16T00:00:00.00Z",
+    "coordinates": "Psalm 15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-17T00:00:00.00Z",
+    "coordinates": "Job 1:1-4:11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-18T00:00:00.00Z",
+    "coordinates": "Matthew 18:10-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-19T00:00:00.00Z",
+    "coordinates": "Psalm 16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-20T00:00:00.00Z",
+    "coordinates": "Job 4:12-7:21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-21T00:00:00.00Z",
+    "coordinates": "Matthew 19:1-15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-22T00:00:00.00Z",
+    "coordinates": "Psalm 17:1-5",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-23T00:00:00.00Z",
+    "coordinates": "Job 8-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-24T00:00:00.00Z",
+    "coordinates": "Matthew 19:16-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-25T00:00:00.00Z",
+    "coordinates": "Proverbs 3:11-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-26T00:00:00.00Z",
+    "coordinates": "Job 11-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-27T00:00:00.00Z",
+    "coordinates": "Matthew 20:1-19",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-28T00:00:00.00Z",
+    "coordinates": "Psalm 17:6-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-29T00:00:00.00Z",
+    "coordinates": "Job 15-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-30T00:00:00.00Z",
+    "coordinates": "Matthew 20:20-34",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-03-31T00:00:00.00Z",
+    "coordinates": "Psalm 17:13-15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-01T00:00:00.00Z",
+    "coordinates": "Job 19-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-02T00:00:00.00Z",
+    "coordinates": "Matthew 21:1-17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-03T00:00:00.00Z",
+    "coordinates": "Psalm 18:1-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-04T00:00:00.00Z",
+    "coordinates": "Job 22-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-05T00:00:00.00Z",
+    "coordinates": "Matthew 21:18-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-06T00:00:00.00Z",
+    "coordinates": "Proverbs 3:21-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-07T00:00:00.00Z",
+    "coordinates": "Job 25-29",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-08T00:00:00.00Z",
+    "coordinates": "Matthew 21:33-22:14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-09T00:00:00.00Z",
+    "coordinates": "Psalm 18:7-15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-10T00:00:00.00Z",
+    "coordinates": "Job 30-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-11T00:00:00.00Z",
+    "coordinates": "Matthew 22:15-45",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-12T00:00:00.00Z",
+    "coordinates": "Psalm 18:16-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-13T00:00:00.00Z",
+    "coordinates": "Job 33-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-14T00:00:00.00Z",
+    "coordinates": "Matthew 23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-15T00:00:00.00Z",
+    "coordinates": "Psalm 18:25-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-16T00:00:00.00Z",
+    "coordinates": "Job 36-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-17T00:00:00.00Z",
+    "coordinates": "Matthew 24:1-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-18T00:00:00.00Z",
+    "coordinates": "Proverbs 4:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-19T00:00:00.00Z",
+    "coordinates": "Job 39-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-20T00:00:00.00Z",
+    "coordinates": "Matthew 24:32-25:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-21T00:00:00.00Z",
+    "coordinates": "Psalm 18:37-42",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-22T00:00:00.00Z",
+    "coordinates": "Exodus 1-2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-23T00:00:00.00Z",
+    "coordinates": "Matthew 25:14-46",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-24T00:00:00.00Z",
+    "coordinates": "Psalm 18:43-50",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-25T00:00:00.00Z",
+    "coordinates": "Exodus 3-4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-26T00:00:00.00Z",
+    "coordinates": "Matthew 26:1-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-27T00:00:00.00Z",
+    "coordinates": "Psalm 19:1-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-28T00:00:00.00Z",
+    "coordinates": "Exodus 5:1-6:27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-29T00:00:00.00Z",
+    "coordinates": "Matthew 26:31-46",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-04-30T00:00:00.00Z",
+    "coordinates": "Proverbs 4:10-19",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-01T00:00:00.00Z",
+    "coordinates": "Exodus 6:28-8:32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-02T00:00:00.00Z",
+    "coordinates": "Matthew 26:47-68",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-03T00:00:00.00Z",
+    "coordinates": "Psalm 19:7-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-04T00:00:00.00Z",
+    "coordinates": "Exodus 9-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-05T00:00:00.00Z",
+    "coordinates": "Matthew 26:69-27:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-06T00:00:00.00Z",
+    "coordinates": "Psalm 20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-07T00:00:00.00Z",
+    "coordinates": "Exodus 11-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-08T00:00:00.00Z",
+    "coordinates": "Matthew 27:11-44",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-09T00:00:00.00Z",
+    "coordinates": "Psalm 21:1-7",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-10T00:00:00.00Z",
+    "coordinates": "Exodus 13-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-11T00:00:00.00Z",
+    "coordinates": "Matthew 27:45-66",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-12T00:00:00.00Z",
+    "coordinates": "Proverbs 4:20-27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-13T00:00:00.00Z",
+    "coordinates": "Exodus 15-16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-14T00:00:00.00Z",
+    "coordinates": "Matthew 28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-15T00:00:00.00Z",
+    "coordinates": "Psalm 21:8-13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-16T00:00:00.00Z",
+    "coordinates": "Exodus 17-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-17T00:00:00.00Z",
+    "coordinates": "Mark 1:1-28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-18T00:00:00.00Z",
+    "coordinates": "Psalm 22:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-19T00:00:00.00Z",
+    "coordinates": "Exodus 19-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-20T00:00:00.00Z",
+    "coordinates": "Mark 1:29-2:17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-21T00:00:00.00Z",
+    "coordinates": "Psalm 22:12-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-22T00:00:00.00Z",
+    "coordinates": "Exodus 21-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-23T00:00:00.00Z",
+    "coordinates": "Mark 2:18-3:30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-24T00:00:00.00Z",
+    "coordinates": "Proverbs 5:1-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-25T00:00:00.00Z",
+    "coordinates": "Exodus 23-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-26T00:00:00.00Z",
+    "coordinates": "Mark 3:31-4:29",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-27T00:00:00.00Z",
+    "coordinates": "Psalm 22:22-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-28T00:00:00.00Z",
+    "coordinates": "Exodus 25-26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-29T00:00:00.00Z",
+    "coordinates": "Mark 4:30-5:20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-30T00:00:00.00Z",
+    "coordinates": "Psalm 23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-05-31T00:00:00.00Z",
+    "coordinates": "Exodus 27-28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-01T00:00:00.00Z",
+    "coordinates": "Mark 5:21-6:6a",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-02T00:00:00.00Z",
+    "coordinates": "Psalm 24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-03T00:00:00.00Z",
+    "coordinates": "Exodus 29-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-04T00:00:00.00Z",
+    "coordinates": "Mark 6:6b-29",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-05T00:00:00.00Z",
+    "coordinates": "Proverbs 5:15-23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-06T00:00:00.00Z",
+    "coordinates": "Exodus 31:1-33:6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-07T00:00:00.00Z",
+    "coordinates": "Mark 6:30-56",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-08T00:00:00.00Z",
+    "coordinates": "Psalm 25:1-7",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-09T00:00:00.00Z",
+    "coordinates": "Exodus 33:7-34:35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-10T00:00:00.00Z",
+    "coordinates": "Mark 7:1-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-11T00:00:00.00Z",
+    "coordinates": "Psalm 25:8-15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-12T00:00:00.00Z",
+    "coordinates": "Exodus 35-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-13T00:00:00.00Z",
+    "coordinates": "Mark 7:31-8:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-14T00:00:00.00Z",
+    "coordinates": "Psalm 25:16-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-15T00:00:00.00Z",
+    "coordinates": "Exodus 37-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-16T00:00:00.00Z",
+    "coordinates": "Mark 8:14-9:1",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-17T00:00:00.00Z",
+    "coordinates": "Proverbs 6:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-18T00:00:00.00Z",
+    "coordinates": "Exodus 39-40",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-19T00:00:00.00Z",
+    "coordinates": "Mark 9:2-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-20T00:00:00.00Z",
+    "coordinates": "Psalm 26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-21T00:00:00.00Z",
+    "coordinates": "Leviticus 1-2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-22T00:00:00.00Z",
+    "coordinates": "Mark 9:33-10:12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-23T00:00:00.00Z",
+    "coordinates": "Psalm 27:1-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-24T00:00:00.00Z",
+    "coordinates": "Leviticus 3-4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-25T00:00:00.00Z",
+    "coordinates": "Mark 10:13-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-26T00:00:00.00Z",
+    "coordinates": "Psalm 27:7-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-27T00:00:00.00Z",
+    "coordinates": "Leviticus 5:1-7:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-28T00:00:00.00Z",
+    "coordinates": "Mark 10:32-52",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-29T00:00:00.00Z",
+    "coordinates": "Proverbs 6:12-19",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-06-30T00:00:00.00Z",
+    "coordinates": "Leviticus 7:11-8:36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-01T00:00:00.00Z",
+    "coordinates": "Mark 11:1-26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-02T00:00:00.00Z",
+    "coordinates": "Psalm 28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-03T00:00:00.00Z",
+    "coordinates": "Leviticus 9-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-04T00:00:00.00Z",
+    "coordinates": "Mark 11:27-12:12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-05T00:00:00.00Z",
+    "coordinates": "Psalm 29",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-06T00:00:00.00Z",
+    "coordinates": "Leviticus 11-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-07T00:00:00.00Z",
+    "coordinates": "Mark 12:13-27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-08T00:00:00.00Z",
+    "coordinates": "Psalm 30:1-7",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-09T00:00:00.00Z",
+    "coordinates": "Leviticus 13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-10T00:00:00.00Z",
+    "coordinates": "Mark 12:28-44",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-11T00:00:00.00Z",
+    "coordinates": "Proverbs 6:20-29",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-12T00:00:00.00Z",
+    "coordinates": "Leviticus 14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-13T00:00:00.00Z",
+    "coordinates": "Mark 13:1-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-14T00:00:00.00Z",
+    "coordinates": "Psalm 30:8-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-15T00:00:00.00Z",
+    "coordinates": "Leviticus 15-16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-16T00:00:00.00Z",
+    "coordinates": "Mark 13:32-14:16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-17T00:00:00.00Z",
+    "coordinates": "Psalm 31:1-8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-18T00:00:00.00Z",
+    "coordinates": "Leviticus 17-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-19T00:00:00.00Z",
+    "coordinates": "Mark 14:17-42",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-20T00:00:00.00Z",
+    "coordinates": "Psalm 31:9-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-21T00:00:00.00Z",
+    "coordinates": "Leviticus 19-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-22T00:00:00.00Z",
+    "coordinates": "Mark 14:43-72",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-23T00:00:00.00Z",
+    "coordinates": "Proverbs 6:30-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-24T00:00:00.00Z",
+    "coordinates": "Leviticus 21-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-25T00:00:00.00Z",
+    "coordinates": "Mark 15:1-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-26T00:00:00.00Z",
+    "coordinates": "Psalm 31:19-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-27T00:00:00.00Z",
+    "coordinates": "Leviticus 23-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-28T00:00:00.00Z",
+    "coordinates": "Mark 15:33-47",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-29T00:00:00.00Z",
+    "coordinates": "Psalm 32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-30T00:00:00.00Z",
+    "coordinates": "Leviticus 25:1-26:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-07-31T00:00:00.00Z",
+    "coordinates": "Mark 16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-01T00:00:00.00Z",
+    "coordinates": "Psalm 33:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-02T00:00:00.00Z",
+    "coordinates": "Leviticus 26:14-27:34",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-03T00:00:00.00Z",
+    "coordinates": "Luke 1:1-25",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-04T00:00:00.00Z",
+    "coordinates": "Proverbs 7:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-05T00:00:00.00Z",
+    "coordinates": "Numbers 1:1-2:9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-06T00:00:00.00Z",
+    "coordinates": "Luke 1:26-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-07T00:00:00.00Z",
+    "coordinates": "Psalm 33:12-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-08T00:00:00.00Z",
+    "coordinates": "Numbers 2:10-3:51",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-09T00:00:00.00Z",
+    "coordinates": "Luke 1:39-56",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-10T00:00:00.00Z",
+    "coordinates": "Psalm 34:1-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-11T00:00:00.00Z",
+    "coordinates": "Numbers 4:1-5:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-12T00:00:00.00Z",
+    "coordinates": "Luke 1:57-80",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-13T00:00:00.00Z",
+    "coordinates": "Psalm 34:11-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-14T00:00:00.00Z",
+    "coordinates": "Numbers 5:11-6:27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-15T00:00:00.00Z",
+    "coordinates": "Luke 2:1-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-16T00:00:00.00Z",
+    "coordinates": "Proverbs 7:10-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-17T00:00:00.00Z",
+    "coordinates": "Numbers 7:1-65",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-18T00:00:00.00Z",
+    "coordinates": "Luke 2:21-40",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-19T00:00:00.00Z",
+    "coordinates": "Psalm 35:1-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-20T00:00:00.00Z",
+    "coordinates": "Numbers 7:66-9:14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-21T00:00:00.00Z",
+    "coordinates": "Luke 2:41-52",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-22T00:00:00.00Z",
+    "coordinates": "Psalm 35:11-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-23T00:00:00.00Z",
+    "coordinates": "Numbers 9:15-11:23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-24T00:00:00.00Z",
+    "coordinates": "Luke 3:1-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-25T00:00:00.00Z",
+    "coordinates": "Psalm 35:19-28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-26T00:00:00.00Z",
+    "coordinates": "Numbers 11:24-13:33",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-27T00:00:00.00Z",
+    "coordinates": "Luke 3:23-4:13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-28T00:00:00.00Z",
+    "coordinates": "Proverbs 7:21-27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-29T00:00:00.00Z",
+    "coordinates": "Numbers 14:1-15:21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-30T00:00:00.00Z",
+    "coordinates": "Luke 4:14-37",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-08-31T00:00:00.00Z",
+    "coordinates": "Psalm 36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-01T00:00:00.00Z",
+    "coordinates": "Numbers 15:22-16:35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-02T00:00:00.00Z",
+    "coordinates": "Luke 4:38-5:16",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-03T00:00:00.00Z",
+    "coordinates": "Psalm 37:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-04T00:00:00.00Z",
+    "coordinates": "Numbers 16:36-18:32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-05T00:00:00.00Z",
+    "coordinates": "Luke 5:17-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-06T00:00:00.00Z",
+    "coordinates": "Psalm 37:10-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-07T00:00:00.00Z",
+    "coordinates": "Numbers 19:1-21:3",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-08T00:00:00.00Z",
+    "coordinates": "Luke 5:33-6:11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-09T00:00:00.00Z",
+    "coordinates": "Proverbs 8:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-10T00:00:00.00Z",
+    "coordinates": "Numbers 21:4-22:20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-11T00:00:00.00Z",
+    "coordinates": "Luke 6:12-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-12T00:00:00.00Z",
+    "coordinates": "Psalm 37:21-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-13T00:00:00.00Z",
+    "coordinates": "Numbers 22:21-23:30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-14T00:00:00.00Z",
+    "coordinates": "Luke 6:37-7:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-15T00:00:00.00Z",
+    "coordinates": "Psalm 37:32-40",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-16T00:00:00.00Z",
+    "coordinates": "Numbers 24:1-26:11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-17T00:00:00.00Z",
+    "coordinates": "Luke 7:11-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-18T00:00:00.00Z",
+    "coordinates": "Psalm 38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-19T00:00:00.00Z",
+    "coordinates": "Numbers 26:12-27:11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-20T00:00:00.00Z",
+    "coordinates": "Luke 7:36-50",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-21T00:00:00.00Z",
+    "coordinates": "Proverbs 8:12-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-22T00:00:00.00Z",
+    "coordinates": "Numbers 27:12-31:24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-23T00:00:00.00Z",
+    "coordinates": "Luke 8:1-39",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-24T00:00:00.00Z",
+    "coordinates": "Psalm 39",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-25T00:00:00.00Z",
+    "coordinates": "Numbers 31:25-32:42",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-26T00:00:00.00Z",
+    "coordinates": "Luke 8:40-9:9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-27T00:00:00.00Z",
+    "coordinates": "Psalm 40:1-8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-28T00:00:00.00Z",
+    "coordinates": "Numbers 33-34",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-29T00:00:00.00Z",
+    "coordinates": "Luke 9:10-27",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-09-30T00:00:00.00Z",
+    "coordinates": "Proverbs 8:22-31",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-01T00:00:00.00Z",
+    "coordinates": "Numbers 35-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-02T00:00:00.00Z",
+    "coordinates": "Luke 9:28-56",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-03T00:00:00.00Z",
+    "coordinates": "Psalm 40:9-17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-04T00:00:00.00Z",
+    "coordinates": "Deuteronomy 1-2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-05T00:00:00.00Z",
+    "coordinates": "Luke 9:57-10:24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-06T00:00:00.00Z",
+    "coordinates": "Psalm 41:1-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-07T00:00:00.00Z",
+    "coordinates": "Deuteronomy 3-4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-08T00:00:00.00Z",
+    "coordinates": "Luke 10:25-11:4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-09T00:00:00.00Z",
+    "coordinates": "Psalm 41:7-13",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-10T00:00:00.00Z",
+    "coordinates": "Deuteronomy 5-6",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-11T00:00:00.00Z",
+    "coordinates": "Luke 11:5-32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-12T00:00:00.00Z",
+    "coordinates": "Proverbs 8:32-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-13T00:00:00.00Z",
+    "coordinates": "Deuteronomy 7-8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-14T00:00:00.00Z",
+    "coordinates": "Luke 11:33-54",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-15T00:00:00.00Z",
+    "coordinates": "Psalm 42:1-6a",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-16T00:00:00.00Z",
+    "coordinates": "Deuteronomy 9-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-17T00:00:00.00Z",
+    "coordinates": "Luke 12:1-34",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-18T00:00:00.00Z",
+    "coordinates": "Psalm 42:6b-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-19T00:00:00.00Z",
+    "coordinates": "Deuteronomy 11-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-20T00:00:00.00Z",
+    "coordinates": "Luke 12:35-59",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-21T00:00:00.00Z",
+    "coordinates": "Psalm 43",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-22T00:00:00.00Z",
+    "coordinates": "Deuteronomy 13-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-23T00:00:00.00Z",
+    "coordinates": "Luke 13:1-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-24T00:00:00.00Z",
+    "coordinates": "Proverbs 9:1-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-25T00:00:00.00Z",
+    "coordinates": "Deuteronomy 15:1-16:20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-26T00:00:00.00Z",
+    "coordinates": "Luke 13:31-14:14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-27T00:00:00.00Z",
+    "coordinates": "Psalm 44:1-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-28T00:00:00.00Z",
+    "coordinates": "Deuteronomy 16:21-18:22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-29T00:00:00.00Z",
+    "coordinates": "Luke 14:15-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-30T00:00:00.00Z",
+    "coordinates": "Psalm 44:13-26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-10-31T00:00:00.00Z",
+    "coordinates": "Deuteronomy 19-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-01T00:00:00.00Z",
+    "coordinates": "Luke 15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-02T00:00:00.00Z",
+    "coordinates": "Psalm 45:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-03T00:00:00.00Z",
+    "coordinates": "Deuteronomy 21-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-04T00:00:00.00Z",
+    "coordinates": "Luke 16:1-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-05T00:00:00.00Z",
+    "coordinates": "Proverbs 9:13-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-06T00:00:00.00Z",
+    "coordinates": "Deuteronomy 23-25",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-07T00:00:00.00Z",
+    "coordinates": "Luke 16:19-17:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-08T00:00:00.00Z",
+    "coordinates": "Psalm 45:10-17",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-09T00:00:00.00Z",
+    "coordinates": "Deuteronomy 26:1-28:14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-10T00:00:00.00Z",
+    "coordinates": "Luke 17:11-37",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-11T00:00:00.00Z",
+    "coordinates": "Psalm 46",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-12T00:00:00.00Z",
+    "coordinates": "Deuteronomy 28:15-68",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-13T00:00:00.00Z",
+    "coordinates": "Luke 18:1-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-14T00:00:00.00Z",
+    "coordinates": "Psalm 47",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-15T00:00:00.00Z",
+    "coordinates": "Deuteronomy 29:1-30:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-16T00:00:00.00Z",
+    "coordinates": "Luke 18:31-19:10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-17T00:00:00.00Z",
+    "coordinates": "Proverbs 10:1-10",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-18T00:00:00.00Z",
+    "coordinates": "Deuteronomy 30:11-31:30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-19T00:00:00.00Z",
+    "coordinates": "Luke 19:11-44",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-20T00:00:00.00Z",
+    "coordinates": "Psalm 48:1-8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-21T00:00:00.00Z",
+    "coordinates": "Deuteronomy 32",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-22T00:00:00.00Z",
+    "coordinates": "Luke 19:45-20:26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-23T00:00:00.00Z",
+    "coordinates": "Psalm 48:9-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-24T00:00:00.00Z",
+    "coordinates": "Deuteronomy 33-34",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-25T00:00:00.00Z",
+    "coordinates": "Luke 20:27-21:4",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-26T00:00:00.00Z",
+    "coordinates": "Psalm 49",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-27T00:00:00.00Z",
+    "coordinates": "Joshua 1-2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-28T00:00:00.00Z",
+    "coordinates": "Luke 21:5-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-29T00:00:00.00Z",
+    "coordinates": "Proverbs 10:11-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-11-30T00:00:00.00Z",
+    "coordinates": "Joshua 3:1-5:12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-01T00:00:00.00Z",
+    "coordinates": "Luke 22:1-38",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-02T00:00:00.00Z",
+    "coordinates": "Psalm 50:1-15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-03T00:00:00.00Z",
+    "coordinates": "Joshua 5:13-7:26",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-04T00:00:00.00Z",
+    "coordinates": "Luke 22:39-62",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-05T00:00:00.00Z",
+    "coordinates": "Psalm 50:16-23",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-06T00:00:00.00Z",
+    "coordinates": "Joshua 8:1-9:15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-07T00:00:00.00Z",
+    "coordinates": "Luke 22:63-23:25",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-08T00:00:00.00Z",
+    "coordinates": "Psalm 51:1-9",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-09T00:00:00.00Z",
+    "coordinates": "Joshua 9:16-10:43",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-10T00:00:00.00Z",
+    "coordinates": "Luke 23:26-56",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-11T00:00:00.00Z",
+    "coordinates": "Proverbs 10:21-30",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-12T00:00:00.00Z",
+    "coordinates": "Joshua 11-12",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-13T00:00:00.00Z",
+    "coordinates": "Luke 24:1-35",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-14T00:00:00.00Z",
+    "coordinates": "Psalm 51:10-19",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-15T00:00:00.00Z",
+    "coordinates": "Joshua 13-14",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-16T00:00:00.00Z",
+    "coordinates": "Luke 24:36-53",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-17T00:00:00.00Z",
+    "coordinates": "Psalm 52",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-18T00:00:00.00Z",
+    "coordinates": "Joshua 15",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-19T00:00:00.00Z",
+    "coordinates": "John 1:1-28",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-20T00:00:00.00Z",
+    "coordinates": "Psalm 53",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-21T00:00:00.00Z",
+    "coordinates": "Joshua 16-18",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-22T00:00:00.00Z",
+    "coordinates": "John 1:29-51",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-23T00:00:00.00Z",
+    "coordinates": "Proverbs 10:31-11:8",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-24T00:00:00.00Z",
+    "coordinates": "Joshua 19-20",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-25T00:00:00.00Z",
+    "coordinates": "John 2",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-26T00:00:00.00Z",
+    "coordinates": "Psalm 54",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-27T00:00:00.00Z",
+    "coordinates": "Joshua 21-22",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-28T00:00:00.00Z",
+    "coordinates": "John 3:1-21",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-29T00:00:00.00Z",
+    "coordinates": "Psalm 55:1-11",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-30T00:00:00.00Z",
+    "coordinates": "Joshua 23-24",
+    "wasRead": false,
+    "whenWasRead": ""
+  },
+  {
+    "date": "2019-12-31T00:00:00.00Z",
+    "coordinates": "John 3:22-36",
+    "wasRead": false,
+    "whenWasRead": ""
+  }
+]

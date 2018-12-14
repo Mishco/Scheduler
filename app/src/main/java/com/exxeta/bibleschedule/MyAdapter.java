@@ -12,35 +12,40 @@ import android.widget.TextView;
 
 import com.exxeta.bibleschedule.Model.Schedule;
 
+import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
+
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 /**
  * Adapter for manage Item in list
  */
 public class MyAdapter extends BaseAdapter implements Filterable {
     private Context context;
-    public static ArrayList<Schedule> scheduleArrayList;
-    public ArrayList<Schedule> orig;
+    public static List<Schedule> scheduleArrayList;
+    public List<Schedule> orig;
+    Realm realm;
 
-    private DBController controller;
 
-    public MyAdapter(Context context, DBController controller) {
+    public MyAdapter(Context context) {
         super();
         this.context = context;
-        this.controller = controller;
+        realm = Realm.getDefaultInstance();
 
         loadSchedule();
         sortSchedule();
     }
 
-
     private void loadSchedule() {
-        DateTimeFormatter dateFormatter = DateTimeFormat.forPattern("MM/dd/yyyy");
-        scheduleArrayList = controller.getAllCoordinates();
+        scheduleArrayList = getModelList();
         //controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
     }
 
@@ -83,6 +88,7 @@ public class MyAdapter extends BaseAdapter implements Filterable {
             viewHolder = new ViewHolder();
             viewHolder.tvDate = convertView.findViewById(R.id.text1);
             viewHolder.tvCoordinate = convertView.findViewById(R.id.text2);
+            viewHolder.checkBox = convertView.findViewById(R.id.checkbox1);
 
             convertView.setTag(viewHolder);
         } else {
@@ -90,8 +96,11 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         }
         DateTimeFormatter dtfOut = DateTimeFormat.forPattern("MMM/dd");
 
-        viewHolder.tvDate.setText(dtfOut.print(current.getDate()));
-        viewHolder.tvCoordinate.setText(current.getCoordinate());
+        viewHolder.tvDate.setText(new SimpleDateFormat("dd.MMM").format(current.getDate()));
+        viewHolder.tvCoordinate.setText(current.getCoordinates());
+        viewHolder.checkBox.setChecked(current.getWasRead());
+
+
 
 
 //        TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
@@ -118,7 +127,7 @@ public class MyAdapter extends BaseAdapter implements Filterable {
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
                 final FilterResults oReturn = new FilterResults();
-                final ArrayList<Schedule> results = new ArrayList<>();
+                final List<Schedule> results = new ArrayList<>();
                 if (orig == null)
                     orig = scheduleArrayList;
                 if (constraint != null) {
@@ -136,10 +145,27 @@ public class MyAdapter extends BaseAdapter implements Filterable {
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                scheduleArrayList = (ArrayList<Schedule>) results.values;
+                scheduleArrayList = (List<Schedule>) results.values;
                 notifyDataSetChanged();
             }
         };
+    }
+
+    public List<Schedule> getModelList() {
+        List<Schedule> list = new ArrayList<>();
+        Realm realm = null;
+        try {
+            realm = Realm.getDefaultInstance();
+            RealmResults<Schedule> results = realm
+                    .where(Schedule.class)
+                    .findAll();
+            list.addAll(realm.copyFromRealm(results));
+        } finally {
+            if (realm != null) {
+                realm.close();
+            }
+        }
+        return list;
     }
 
     private class ViewHolder {

@@ -2,64 +2,59 @@ package com.exxeta.bibleschedule.Model;
 
 import org.joda.time.LocalDate;
 
-/**
- * Bible Schedule
- */
+import java.util.Date;
 
-public class Schedule {
+import io.realm.Realm;
+import io.realm.RealmObject;
 
-    private String id;
-    private LocalDate date;
-    private String coordinate;
-    private String wasRead;
 
-    private boolean isSelected;
+public class Schedule extends RealmObject {
 
-    public Schedule(String id, LocalDate date, String coordinate, String wasRead) {
-        this.id = id;
+    private Date date;
+    private String coordinates;
+    private boolean wasRead;
+    private Date whenWasRead;
+
+    public Schedule() {
+
+    }
+
+    public Schedule(Date date, String coordinates, Boolean wasRead) {
         this.date = date;
-        this.coordinate = coordinate;
+        this.coordinates = coordinates;
         this.wasRead = wasRead;
+        this.whenWasRead = whenWasRead;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public String getCoordinate() {
-        return coordinate;
+    public String getCoordinates() {
+        return coordinates;
     }
 
-    public void setCoordinate(String coordinate) {
-        this.coordinate = coordinate;
+    public void setCoordinates(String coordinates) {
+        this.coordinates = coordinates;
     }
 
-    public String getWasRead() {
+    public Boolean getWasRead() {
         return wasRead;
     }
 
-    public void setWasRead(String wasRead) {
+    public void setWasRead(Boolean wasRead) {
         this.wasRead = wasRead;
     }
 
-    public boolean isSelected() {
-        return isSelected;
+    public Date getWhenWasRead() {
+        return whenWasRead;
     }
 
-    public void setSelected(boolean selected) {
-        isSelected = selected;
+    public void setWhenWasRead(Date whenWasRead) {
+        this.whenWasRead = whenWasRead;
     }
-
 }

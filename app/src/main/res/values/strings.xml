@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="intro_message">Hello in Bible Schedule</string>
     <string name="action_show_number_of_checked">Checked count</string>
+    <string name="action_import_from_csv">Import Data</string>
 </resources>
