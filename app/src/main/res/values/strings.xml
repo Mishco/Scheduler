@@ -4,4 +4,7 @@
     <string name="intro_message">Hello in Bible Schedule</string>
     <string name="action_show_number_of_checked">Checked count</string>
     <string name="action_import_from_csv">Import Data</string>
+    <string name="button">Date</string>
+    <string name="beforeMonth"><![CDATA[<]]></string>
+    <string name="nextMonth"><![CDATA[>]]></string>
 </resources>

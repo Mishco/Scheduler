@@ -21,10 +21,10 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        if(shouldOverwriteDatabaseOnAppStartup) {
-            copyBundledRealmFile(this.getResources().openRawResource(R.raw.testdb),testDbFileName );
+        if (shouldOverwriteDatabaseOnAppStartup) {
+            copyBundledRealmFile(this.getResources().openRawResource(R.raw.testdb), testDbFileName);
         } else {
-            if(!fileFound(testDbFileName, this.getFilesDir())) {
+            if (!fileFound(testDbFileName, this.getFilesDir())) {
                 copyBundledRealmFile(this.getResources().openRawResource(R.raw.testdb), testDbFileName);
             }
         }
@@ -51,6 +51,7 @@ public class App extends Application {
             e.printStackTrace();
         }
     }
+
     public boolean fileFound(String name, File file) {
         File[] list = file.listFiles();
         if (list != null)

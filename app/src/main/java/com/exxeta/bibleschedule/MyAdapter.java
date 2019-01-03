@@ -1,6 +1,8 @@
 package com.exxeta.bibleschedule;
 
 import android.content.Context;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +14,13 @@ import android.widget.TextView;
 
 import com.exxeta.bibleschedule.Model.Schedule;
 
-import org.joda.time.LocalDate;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-
 import java.text.SimpleDateFormat;
+import java.time.YearMonth;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -28,6 +28,7 @@ import io.realm.RealmResults;
 /**
  * Adapter for manage Item in list
  */
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class MyAdapter extends BaseAdapter implements Filterable {
     private Context context;
     public static List<Schedule> scheduleArrayList;
@@ -44,9 +45,17 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         sortSchedule();
     }
 
+    public void updateYearMonthValues(YearMonth actualYearMonth) {
+        Date dateFrom = Date.from(actualYearMonth.atDay(0).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date dateTo = Date.from(actualYearMonth.atEndOfMonth().plusDays(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        scheduleArrayList = getModelListFromTo(dateFrom, dateTo);
+        notifyDataSetChanged();
+    }
+
     private void loadSchedule() {
-        scheduleArrayList = getModelList();
-        //controller.getWeekRecordsFromAllCoordinates(LocalDate.parse("12/31/2018", dateFormatter)); // from db
+        Date dateFrom = Date.from(YearMonth.now().atDay(0).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date dateTo = Date.from(YearMonth.now().atEndOfMonth().atStartOfDay(ZoneId.systemDefault()).toInstant());
+        scheduleArrayList = getModelListFromTo(dateFrom, dateTo);
     }
 
     private void sortSchedule() {
@@ -79,7 +88,8 @@ public class MyAdapter extends BaseAdapter implements Filterable {
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
         final ViewHolder viewHolder;
-        final Schedule current = scheduleArrayList.get(position);
+        final Schedule currentOld = scheduleArrayList.get(position);
+        final Schedule current = this.findByDate(currentOld.getDate());
 
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -94,13 +104,9 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        DateTimeFormatter dtfOut = DateTimeFormat.forPattern("MMM/dd");
-
         viewHolder.tvDate.setText(new SimpleDateFormat("dd.MMM").format(current.getDate()));
         viewHolder.tvCoordinate.setText(current.getCoordinates());
         viewHolder.checkBox.setChecked(current.getWasRead());
-
-
 
 
 //        TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
@@ -119,11 +125,7 @@ public class MyAdapter extends BaseAdapter implements Filterable {
     @Override
     public Filter getFilter() {
         return new Filter() {
-            /**
-             * Filter due to date
-             * @param constraint
-             * @return
-             */
+
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
                 final FilterResults oReturn = new FilterResults();
@@ -168,11 +170,57 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         return list;
     }
 
+    public List<Schedule> getModelListFromTo(Date from, Date to) {
+        List<Schedule> list = new ArrayList<>();
+        Realm realm = null;
+        try {
+            realm = Realm.getDefaultInstance();
+            RealmResults<Schedule> results = realm.where(Schedule.class).between("date", from, to).findAll();
+            list.addAll(realm.copyFromRealm(results));
+        } finally {
+            if (realm != null) {
+                realm.close();
+            }
+        }
+        return list;
+    }
+
+    private Schedule findByDate(Date date) {
+        Schedule schedule;
+        Realm realm = null;
+        try {
+            realm = Realm.getDefaultInstance();
+            Schedule results = realm.where(Schedule.class).equalTo("date", date).findFirst();
+            schedule = realm.copyFromRealm(results);
+        } finally {
+            if (realm != null) {
+                realm.close();
+            }
+        }
+        return schedule;
+    }
+
+    private void saveCheckedByDate(Date date) {
+        Realm realm = null;
+        try {
+            realm = Realm.getDefaultInstance();
+            Schedule findedResult = realm.where(Schedule.class).equalTo("date", date).findFirst();
+            findedResult.setWasRead(true);
+
+            realm.beginTransaction();
+            realm.insertOrUpdate(findedResult);
+            realm.commitTransaction();
+        } finally {
+            if (realm != null) {
+                realm.close();
+            }
+        }
+    }
+
+
     private class ViewHolder {
         protected CheckBox checkBox;
         private TextView tvCoordinate;
         private TextView tvDate;
     }
-
-
 }

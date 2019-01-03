@@ -29,10 +29,10 @@ class SlidingTabsBasicFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-//        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
-//        mViewPager.setAdapter(new SamplePagerAdapter());
-//        mSlidingTabLayout = (SlidingTabLayout) view.findViewById(R.id.sliding_tabs);
-//        mSlidingTabLayout.setViewPager(mViewPager);
+        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        mViewPager.setAdapter(new SamplePagerAdapter());
+        mSlidingTabLayout = (SlidingTabLayout) view.findViewById(R.id.sliding_tabs);
+        mSlidingTabLayout.setViewPager(mViewPager);
     }
 
     class SamplePagerAdapter extends PagerAdapter {
