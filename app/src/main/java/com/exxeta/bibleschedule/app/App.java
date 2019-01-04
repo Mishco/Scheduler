@@ -38,9 +38,10 @@ public class App extends Application {
     }
 
     private void copyBundledRealmFile(InputStream inputStream, String outFileName) {
+        FileOutputStream outputStream = null;
         try {
             File file = new File(this.getFilesDir(), outFileName);
-            FileOutputStream outputStream = new FileOutputStream(file);
+            outputStream = new FileOutputStream(file);
             byte[] buf = new byte[1024];
             int bytesRead;
             while ((bytesRead = inputStream.read(buf)) > 0) {
@@ -49,6 +50,14 @@ public class App extends Application {
             outputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (outputStream != null) {
+                try {
+                    outputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 

@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.exxeta.bibleschedule.Model.Schedule;
 
@@ -46,14 +47,14 @@ public class MyAdapter extends BaseAdapter implements Filterable {
     }
 
     public void updateYearMonthValues(YearMonth actualYearMonth) {
-        Date dateFrom = Date.from(actualYearMonth.atDay(0).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date dateFrom = Date.from(actualYearMonth.atDay(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
         Date dateTo = Date.from(actualYearMonth.atEndOfMonth().plusDays(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
         scheduleArrayList = getModelListFromTo(dateFrom, dateTo);
         notifyDataSetChanged();
     }
 
     private void loadSchedule() {
-        Date dateFrom = Date.from(YearMonth.now().atDay(0).atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Date dateFrom = Date.from(YearMonth.now().atDay(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
         Date dateTo = Date.from(YearMonth.now().atEndOfMonth().atStartOfDay(ZoneId.systemDefault()).toInstant());
         scheduleArrayList = getModelListFromTo(dateFrom, dateTo);
     }
@@ -108,17 +109,14 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         viewHolder.tvCoordinate.setText(current.getCoordinates());
         viewHolder.checkBox.setChecked(current.getWasRead());
 
-
-//        TextView textView = (TextView) convertView.findViewById(android.R.id.text2);
-//        textView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // TODO check this textviews and checkbox after click na read the text
-//                Intent intent = new Intent(context.getApplicationContext(), NextActivity.class);
-//                context.getApplicationContext().startActivity(intent);
-//            }
-//        });
-
+        viewHolder.checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Date searched = current.getDate();
+                Toast.makeText(context, "Checkbox " + searched + " clicked!", Toast.LENGTH_SHORT).show();
+                saveCheckedByDate(searched);
+            }
+        });
         return convertView;
     }
 
@@ -205,9 +203,8 @@ public class MyAdapter extends BaseAdapter implements Filterable {
         try {
             realm = Realm.getDefaultInstance();
             Schedule findedResult = realm.where(Schedule.class).equalTo("date", date).findFirst();
-            findedResult.setWasRead(true);
-
             realm.beginTransaction();
+            findedResult.setWasRead(true);
             realm.insertOrUpdate(findedResult);
             realm.commitTransaction();
         } finally {

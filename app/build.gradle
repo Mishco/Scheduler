@@ -3,6 +3,12 @@ apply plugin: "org.sonarqube"
 apply plugin: 'realm-android' //todo (2) add realm plugin
 
 android {
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.exxeta.bibleschedule"
@@ -31,6 +37,8 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'io.realm:android-adapters:3.0.0'
+
 
     implementation 'com.opencsv:opencsv:4.4'
     // https://mvnrepository.com/artifact/joda-time/joda-time
