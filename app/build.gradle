@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: "org.sonarqube"
-apply plugin: 'realm-android' //todo (2) add realm plugin
+apply plugin: 'realm-android'
 
 android {
 
@@ -36,14 +36,11 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'io.realm:android-adapters:3.0.0'
-
-
     implementation 'com.opencsv:opencsv:4.4'
-    // https://mvnrepository.com/artifact/joda-time/joda-time
-    // FIXME IS DEPRECATED
-    implementation group: 'joda-time', name: 'joda-time', version: '2.3'
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

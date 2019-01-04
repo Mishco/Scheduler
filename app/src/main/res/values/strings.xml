@@ -7,4 +7,5 @@
     <string name="button">Date</string>
     <string name="beforeMonth"><![CDATA[<]]></string>
     <string name="nextMonth"><![CDATA[>]]></string>
+    <string name="action_remove_data">Remove Data</string>
 </resources>

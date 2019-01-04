@@ -1,10 +1,7 @@
-package com.exxeta.bibleschedule.Model;
-
-import org.joda.time.LocalDate;
+package com.exxeta.bibleschedule.model;
 
 import java.util.Date;
 
-import io.realm.Realm;
 import io.realm.RealmObject;
 
 
@@ -23,7 +20,6 @@ public class Schedule extends RealmObject {
         this.date = date;
         this.coordinates = coordinates;
         this.wasRead = wasRead;
-        this.whenWasRead = whenWasRead;
     }
 
     public Date getDate() {
