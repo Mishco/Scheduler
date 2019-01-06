@@ -41,6 +41,8 @@ dependencies {
     implementation 'io.realm:android-adapters:3.0.0'
     implementation 'com.opencsv:opencsv:4.4'
 
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10.1'
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

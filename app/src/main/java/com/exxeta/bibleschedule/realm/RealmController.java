@@ -2,8 +2,6 @@ package com.exxeta.bibleschedule.realm;
 
 import android.app.Activity;
 import android.app.Application;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 
 import com.exxeta.bibleschedule.model.Schedule;
@@ -69,12 +67,21 @@ public class RealmController {
         return realm.where(Schedule.class).findAll();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+
     public RealmResults<Schedule> getScheduleFromMonth(YearMonth actMonth) {
-        
-        Date dateFrom = Date.from(actMonth.atDay(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
-        Date dateTo = Date.from(actMonth.atEndOfMonth().atStartOfDay(ZoneId.systemDefault()).toInstant());
-        return realm.where(Schedule.class).between("date", dateFrom, dateTo).findAll();
+        Date dateFrom = null;
+        Date dateTo = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            dateFrom = Date.from(actMonth.atDay(1).atStartOfDay(ZoneId.systemDefault()).toInstant());
+            dateTo = Date.from(actMonth.atEndOfMonth().atStartOfDay(ZoneId.systemDefault()).toInstant());
+        } else {
+            // TODO for older version of android
+        }
+        if (dateFrom != null && dateTo != null) {
+            return realm.where(Schedule.class).between("date", dateFrom, dateTo).findAll();
+        } else {
+            return null;
+        }
     }
 
 

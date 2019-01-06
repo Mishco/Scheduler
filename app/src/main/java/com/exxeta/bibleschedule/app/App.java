@@ -22,7 +22,7 @@ public class App extends Application {
     private static final String TAG = "App";
 
     private static final String TEST_DB_FILE_NAME = "scheduleBible.realm";
-    private static final boolean SHOULD_OVERWRITE_DATABASE_ON_APP_STARTUP = false;
+    private static final boolean SHOULD_OVERWRITE_DATABASE_ON_APP_STARTUP = true;
 
     @Override
     public void onCreate() {

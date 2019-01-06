@@ -4,7 +4,6 @@ package com.exxeta.bibleschedule;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -37,13 +36,12 @@ import io.realm.RealmResults;
 /**
  * Main Activity class
  */
-@RequiresApi(api = Build.VERSION_CODES.O)
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    private DateTimeFormatter monthYearFormatter = DateTimeFormatter.ofPattern("MMMM yyyy");
+    private DateTimeFormatter monthYearFormatter;
     private TextView actualMonthView;
-    private YearMonth thisMonth = YearMonth.now();
+    private YearMonth thisMonth;
     private Realm realm;
     private ScheduleAdapter adapter;
     private RecyclerView recycler;
@@ -52,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         recycler = findViewById(R.id.recycler);
 
         // Get realm instance
         this.realm = RealmController.with(this).getRealm();
+
 
         setupRecycler();
 
@@ -73,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Press card item for read, long press to set was read item", Toast.LENGTH_LONG).show();
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            monthYearFormatter = DateTimeFormatter.ofPattern("MMMM yyyy");
+            thisMonth = YearMonth.now();
+        } else {
+            // TODO for older version of android
+            // thisMonth = YearMonth.now();
+        }
         findViewsById();
     }
 
@@ -111,11 +116,13 @@ public class MainActivity extends AppCompatActivity {
         Prefs.with(this).setPreLoad(true);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void findViewsById() {
         actualMonthView = findViewById(R.id.actualMonth);
-        Log.v(TAG, "This month " + thisMonth.format(monthYearFormatter));
-        actualMonthView.setText(thisMonth.format(monthYearFormatter));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Log.v(TAG, "This month " + thisMonth.format(monthYearFormatter));
+            actualMonthView.setText(thisMonth.format(monthYearFormatter));
+        }
+
 
         Toolbar myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
@@ -123,19 +130,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onNextMonthClick(View view) {
-        YearMonth lastMonth = thisMonth.plusMonths(1);
-        actualMonthView.setText(lastMonth.format(monthYearFormatter));
-        thisMonth = lastMonth;
-
-        setRealmAdapter(RealmController.with(this).getScheduleFromMonth(thisMonth));
+        YearMonth lastMonth = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            lastMonth = thisMonth.plusMonths(1);
+            actualMonthView.setText(lastMonth.format(monthYearFormatter));
+            thisMonth = lastMonth;
+            setRealmAdapter(RealmController.with(this).getScheduleFromMonth(thisMonth));
+        }
     }
 
     public void onBeforeMonthClick(View view) {
-        YearMonth lastMonth = thisMonth.minusMonths(1);
-        actualMonthView.setText(lastMonth.format(monthYearFormatter));
-        thisMonth = lastMonth;
+        YearMonth lastMonth = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            lastMonth = thisMonth.minusMonths(1);
+            actualMonthView.setText(lastMonth.format(monthYearFormatter));
+            thisMonth = lastMonth;
 
-        setRealmAdapter(RealmController.with(this).getScheduleFromMonth(thisMonth));
+            setRealmAdapter(RealmController.with(this).getScheduleFromMonth(thisMonth));
+        }
+
     }
 
     @Override
